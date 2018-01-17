@@ -1,0 +1,71 @@
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\nunit.framework.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEditor.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEditor.iOS.Extensions.Common.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.UI.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.VR.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\Mono.Cecil.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\Unity.DataContract.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\Unity.CecilTools.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEditor.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.UI.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\nunit.framework.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.Analytics.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.VR.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.Purchasing.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.Timeline.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.UIAutomation.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\Unity.Cecil.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\ExCSS.Unity.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\Unity.Cecil.Pdb.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\Unity.Cecil.Mdb.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.xml
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEditor.xml
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\nunit.framework.xml
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.Timeline.xml
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.UIAutomation.xml
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Luke\GitFolder\Ragentall's Dungeon\obj\Debug\Assembly-CSharp-firstpass.pdb

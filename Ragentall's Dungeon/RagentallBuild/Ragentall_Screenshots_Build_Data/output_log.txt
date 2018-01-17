@@ -1,0 +1,32 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 960M (ID=0x139b)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   22.21.13.8205
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\RagentallBuild\Ragentall_Screenshots_Build_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\RagentallBuild\Ragentall_Screenshots_Build_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\RagentallBuild\Ragentall_Screenshots_Build_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\RagentallBuild\Ragentall_Screenshots_Build_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\RagentallBuild\Ragentall_Screenshots_Build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\RagentallBuild\Ragentall_Screenshots_Build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\RagentallBuild\Ragentall_Screenshots_Build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\RagentallBuild\Ragentall_Screenshots_Build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\RagentallBuild\Ragentall_Screenshots_Build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\RagentallBuild\Ragentall_Screenshots_Build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.154 seconds
+Platform assembly: C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\RagentallBuild\Ragentall_Screenshots_Build_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\Ragentall's Dungeon\RagentallBuild\Ragentall_Screenshots_Build_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.289480 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 3cb4 -> priority: 1 
+  Thread -> id: 49f8 -> priority: 1 
+  Thread -> id: 4f94 -> priority: 1 
+  Thread -> id: 4ec4 -> priority: 1 
