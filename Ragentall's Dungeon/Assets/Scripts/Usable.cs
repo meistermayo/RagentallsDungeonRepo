@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Usable : AudioManager {
 	[SerializeField] GameObject[] ToDelete; 
+	[SerializeField] GameObject[] ToEnable; 
 	[SerializeField] bool used;
 
 	public virtual void Use()
@@ -15,6 +16,9 @@ public class Usable : AudioManager {
 			if (c != null)
 				c.CreateObject ();
 			Destroy (obj);
+		}
+		foreach (GameObject obj in ToEnable) {
+			obj.SetActive (true);
 		}
 		used = true;
 		if (audioClips.Length > 0)

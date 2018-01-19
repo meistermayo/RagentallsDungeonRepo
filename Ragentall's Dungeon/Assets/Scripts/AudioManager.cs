@@ -33,4 +33,12 @@ public class AudioManager : MonoBehaviour {
 	{
 		audioSource.Stop ();
 	}
+
+	public AudioClip GetClip(int a)
+	{
+		if (a > -1 && a < audioClips.Length) {
+			return audioClips [a];
+		} else
+			return null;
+	}
 }

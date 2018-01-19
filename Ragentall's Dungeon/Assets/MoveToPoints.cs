@@ -8,22 +8,28 @@ public class MoveToPoints : MonoBehaviour {
 	[SerializeField] float delayTime;
 	[SerializeField] Transform[] points;
 	int currentPoint=0;
-
+	bool isMoving;
+	public bool IsMoving { get { return isMoving; } }
 	void Start(){
-		StartCoroutine (Travel ());
+		//StartCoroutine (Travel ());
 	}
 
-	IEnumerator Travel()
+	public void TravelToPoint(int pointInd)
 	{
-		while (currentPoint < points.Length) {
-			while (Vector3.Distance (transform.position, points [currentPoint].position) > minDist) {
-				Vector3 dir = Vector3.Normalize (points [currentPoint].position - transform.position) * moveSpeed;
+		StopAllCoroutines ();
+		StartCoroutine(Travel (pointInd));
+	}
+
+	IEnumerator Travel(int pointInd)
+	{
+		isMoving = true;
+		while (Vector3.Distance (transform.position, points [pointInd].position) > minDist) {
+			Vector3 dir = Vector3.Normalize (points [pointInd].position - transform.position) * moveSpeed;
 				dir = new Vector3 (dir.x, 0f, dir.z);
 				transform.position += dir;
 				yield return new WaitForFixedUpdate ();
 			}
 			yield return new WaitForSeconds (delayTime);
-			currentPoint++;
-		}
+		isMoving = false;
 	}
 }
