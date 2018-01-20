@@ -9,6 +9,8 @@ TagManager:
   - KillPlayer
   - Fire
   - Ground
+  - Goblin
+  - Swimmable
   layers:
   - Default
   - TransparentFX

@@ -26,7 +26,7 @@ public class Ragentall_Chase1_Script : MonoBehaviour {
 
 	void Start()
 	{
-		Application.targetFrameRate = 20;
+		Application.targetFrameRate = 60;
 		navMeshAgent = GetComponent<NavMeshAgent> ();
 		rBody = GetComponent<Rigidbody> ();
 		anim = GetComponent<Animator> ();
@@ -86,12 +86,14 @@ public class Ragentall_Chase1_Script : MonoBehaviour {
 		if (Vector3.Distance (transform.position, playerObject.transform.position) < maxDist) {
 			RaycastHit hit;
 			if (Physics.Raycast (transform.position, playerObject.transform.position - transform.position, out hit, 1000f)) {
-				if (!hit.collider.CompareTag ("Ground")) {
+				if (hit.collider.CompareTag ("Player")) {
 					//audioManager.Play (1, false);
 					GlobalAudioManager.Instance.Play(MUSIC_TYPE.ROAR,false);
 					audioManager.Play (1, true);// Random.Range(-.3f,-.1f));
 					chasingPlayer = true;
 					navMeshAgent.enabled = false;
+					StopAllCoroutines ();
+					StartCoroutine (StopChasing ());
 				}
 			}
 		}
@@ -176,4 +178,21 @@ public class Ragentall_Chase1_Script : MonoBehaviour {
 			yield return new WaitForSeconds (delay);
 		}
 	}
+
+	IEnumerator StopChasing()
+	{
+		bool stop = false;
+		while (!stop) {
+			yield return new WaitForSeconds (5f);
+			if (playerObject.transform.position.y < transform.position.y) {
+				rBody.velocity = Vector3.zero;
+				navMeshAgent.enabled = true;
+				GlobalAudioManager.Instance.Play(MUSIC_TYPE.MONTY_VIBES,true);
+				audioManager.Play (2, true);// Random.Range(-.3f,-.1f));
+				chasingPlayer=false;
+				stop = true;
+			}
+		}
+	}
+
 }

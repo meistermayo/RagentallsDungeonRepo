@@ -12,7 +12,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
     {
         [SerializeField] private bool m_IsWalking;
         [SerializeField] private float m_WalkSpeed;
-        [SerializeField] private float m_RunSpeed;
+		[SerializeField] private float m_RunSpeed;
+        [SerializeField] private float m_SwimRiseSpeed;
         [SerializeField] [Range(0f, 1f)] private float m_RunstepLenghten;
         [SerializeField] private float m_JumpSpeed;
         [SerializeField] private float m_StickToGroundForce;
@@ -27,9 +28,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip[] m_FootstepSounds;    // an array of footstep sounds that will be randomly selected from.
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
-
         private Camera m_Camera;
-        private bool m_Jump;
+        private bool m_Jump, m_SwimRise;
+		bool swimming;
+		public bool Swimming{get{return swimming;}}
         private float m_YRotation;
         private Vector2 m_Input;
         private Vector3 m_MoveDir = Vector3.zero;
@@ -67,6 +69,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
+			m_SwimRise = CrossPlatformInputManager.GetButton ("Jump");
 
             if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
             {
@@ -109,7 +112,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_MoveDir.z = desiredMove.z*speed;
 
 
-            if (m_CharacterController.isGrounded)
+			if (swimming) {
+				//m_MoveDir.y = Mathf.Max (-m_SwimRiseSpeed,m_CharacterController.velocity.y);
+				if (m_SwimRise) {
+					m_MoveDir.y = m_SwimRiseSpeed;
+				} else 
+					m_MoveDir.y =  -m_GravityMultiplier*1.5f;
+			} else if (m_CharacterController.isGrounded)
             {
                 m_MoveDir.y = -m_StickToGroundForce;
 
@@ -119,7 +128,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     PlayJumpSound();
                     m_Jump = false;
                     m_Jumping = true;
-                }
+				} 
             }
             else
             {
@@ -256,5 +265,29 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
+
+		void OnTriggerEnter(Collider other)
+		{
+			if (other.CompareTag("Swimmable"))
+			{
+				swimming = true;
+			}
+		}
+
+		void OnTriggerStay(Collider other)
+		{
+			if (other.CompareTag("Swimmable"))
+			{
+				swimming = true;
+			}
+		}
+
+		void OnTriggerExit(Collider other)
+		{
+			if (other.CompareTag("Swimmable"))
+			{
+				swimming = false;
+			}
+		}
     }
 }

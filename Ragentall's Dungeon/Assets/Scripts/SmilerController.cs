@@ -6,6 +6,7 @@ public class SmilerController : Usable {
 	[SerializeField] float screenDist;
 	[SerializeField] float maxDist;
 	[SerializeField] float delay;
+	[SerializeField] Vector3 offset;
 	public Material[] faces;
 	int faceCurrent=0;
 	public MeshRenderer faceRenderer;
@@ -133,7 +134,7 @@ public class SmilerController : Usable {
 		/*/
 		if (Vector3.Distance (transform.position, GlobalVars.Instance.Player.transform.position) > maxDist)
 			return 999f;
-		Vector3 smilerCameraPos = Camera.main.WorldToViewportPoint (transform.position + Vector3.up*1.33f);
+		Vector3 smilerCameraPos = Camera.main.WorldToViewportPoint (transform.position + offset);
 		if (smilerCameraPos.z < 0f) 
 			return 999f;
 		smilerCameraPos.z = 0f;

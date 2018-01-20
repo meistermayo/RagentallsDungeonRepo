@@ -524,10 +524,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClips: []
   ToDelete: []
+  ToEnable: []
   used: 0
-  screenDist: 0.1
+  screenDist: 0.025
   maxDist: 4.5
   delay: 1
+  offset: {x: 0, y: 1.8, z: 0}
   faces:
   - {fileID: 2100000, guid: afdb75922c75d6648be786cb6d39c230, type: 2}
   - {fileID: 2100000, guid: 2ce46eccb76baef4d85d1580e9222d96, type: 2}
@@ -545,6 +547,7 @@ MonoBehaviour:
   launchForce: 1000
   doorsToOpen:
   - {fileID: 0}
+  doorsToClose: []
 --- !u!114 &114526871028530604
 MonoBehaviour:
   m_ObjectHideFlags: 1
