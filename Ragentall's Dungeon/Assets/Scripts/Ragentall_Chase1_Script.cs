@@ -78,11 +78,11 @@ public class Ragentall_Chase1_Script : MonoBehaviour {
 	{
 		navMeshAgent.destination = points [pointIndex].position;
 		navMeshAgent.speed = moveSpeed;
+
 		if (Vector3.Distance (transform.position, navMeshAgent.destination) < 1f) {
-			pointIndex++;
-			if (pointIndex >= points.Length)
-				pointIndex = 0;
+			pointIndex = (pointIndex + 1) % points.Length;
 		}
+
 		if (Vector3.Distance (transform.position, playerObject.transform.position) < maxDist) {
 			RaycastHit hit;
 			if (Physics.Raycast (transform.position, playerObject.transform.position - transform.position, out hit, 1000f)) {

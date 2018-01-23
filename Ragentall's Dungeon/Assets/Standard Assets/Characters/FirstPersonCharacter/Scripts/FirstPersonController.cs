@@ -31,6 +31,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private Camera m_Camera;
         private bool m_Jump, m_SwimRise;
 		bool swimming;
+		bool sinking;
+		public bool Sinking{get{return sinking;}}
 		public bool Swimming{get{return swimming;}}
         private float m_YRotation;
         private Vector2 m_Input;
@@ -95,8 +97,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
         }
 
 
-        private void FixedUpdate()
+        private void FixedUpdate() 
         {
+			if (transform.position.y >= 1f) {
+				swimming = false;
+				StopSinking ();
+			}
             float speed;
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
@@ -111,8 +117,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_MoveDir.x = desiredMove.x*speed;
             m_MoveDir.z = desiredMove.z*speed;
 
-
-			if (swimming) {
+			if (sinking) {
+				m_MoveDir = Vector3.down * .1f;
+				if (m_Jump) {
+					m_MoveDir.y = 3f;
+					m_Jump = false;
+				}
+			}else if (swimming) {
 				//m_MoveDir.y = Mathf.Max (-m_SwimRiseSpeed,m_CharacterController.velocity.y);
 				if (m_SwimRise) {
 					m_MoveDir.y = m_SwimRiseSpeed;
@@ -270,7 +281,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 		{
 			if (other.CompareTag("Swimmable"))
 			{
-				swimming = true;
+				if (transform.position.y < 1f)
+					swimming = true;
 			}
 		}
 
@@ -288,6 +300,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			{
 				swimming = false;
 			}
+		}
+
+		public void StartSinking()
+		{
+			sinking=true;
+		}
+
+		public void StopSinking()
+		{
+			sinking=false;
 		}
     }
 }

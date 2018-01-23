@@ -8,7 +8,11 @@ public class KeyController : MonoBehaviour {
 	{
 		if (other.tag == "Player")
 		{
-			Destroy (gameObject);
+			GetComponent<MeshRenderer>().enabled = false;
+			GetComponent<SphereCollider>().enabled = false;
+			GetComponent<AudioSource>().Play();
+		
+			Destroy (gameObject,1f);
 		}
 	}
 }
