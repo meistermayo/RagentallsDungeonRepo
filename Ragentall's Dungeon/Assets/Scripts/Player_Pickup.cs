@@ -15,6 +15,7 @@ public class Player_Pickup : MonoBehaviour {
 	float handObjectMin = -.5f, handObjectMax = -.135f;
 	float handSpeed = .025f;
 	bool handRising;
+    bool heldItem;
 
 	bool click;
 	bool holdingSomething;
@@ -42,20 +43,33 @@ public class Player_Pickup : MonoBehaviour {
 	}
 
 	void AttemptUse(){
-		if (click) {
-			RaycastHit hit;
-			Debug.DrawRay (transform.position, transform.forward);
-			if (Physics.Raycast(transform.position,Camera.main.transform.forward,out hit, useDistance))
-			{
-				if (hit.collider.tag == "Usable") {
-					hit.collider.GetComponentInParent<Usable> ().Use ();
-				} else if (hit.collider.tag == "Weight") {
-					PickupItem(hit.collider.gameObject,hit.collider.GetComponent<Pickupable_Item>().Pickup);
-				} else if (holdingSomething) {
-					DropItem ();
-				}
-			}	
-		}
+        if (click)
+        {
+            RaycastHit hit;
+            Debug.DrawRay(transform.position, transform.forward);
+            if (Physics.Raycast(transform.position, Camera.main.transform.forward, out hit, useDistance))
+            {
+                if (hit.collider.tag == "Usable")
+                {
+                    hit.collider.GetComponentInParent<Usable>().Use();
+                }
+                else if (hit.collider.tag == "Weight")
+                {
+                    PickupItem(hit.collider.gameObject, hit.collider.GetComponent<Pickupable_Item>().Pickup);
+                    heldItem = true;
+                }
+                else if (holdingSomething)
+                {
+                    DropItem();
+                    heldItem = false;
+                }
+            }
+            else if (holdingSomething)
+            {
+                DropItem();
+                heldItem = false;
+            }
+        }
 	}
 
 	void LookForUse()
@@ -72,7 +86,7 @@ public class Player_Pickup : MonoBehaviour {
 
 	void AnimateHand()
 	{
-		handObject.transform.localPosition += Vector3.up * handSpeed * (handRising ? 1f : -1f);
+		handObject.transform.localPosition += Vector3.up * handSpeed * ((handRising || heldItem) ? 1f : -1f);
 		if (handObject.transform.localPosition.y > handObjectMax)
 		handObject.transform.localPosition = new Vector3 (handObject.transform.localPosition.x, handObjectMax, handObject.transform.localPosition.z); else
 			if (handObject.transform.localPosition.y < handObjectMin)

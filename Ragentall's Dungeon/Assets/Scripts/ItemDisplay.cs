@@ -51,7 +51,10 @@ public class ItemDisplay : MonoBehaviour
 
 		itemChildren [(int)pickup].SetActive (false);
 		heldItemObject.SetActive (true);
+        heldItemObject.transform.position = transform.position + transform.forward * 1f;// + Vector3.up * 1f;
 		heldItemObject.GetComponent<Rigidbody> ().velocity = transform.forward * throwForce + transform.up * upForce;
+        if (pickup == PICKUP_TYPE.MOUSE)
+            heldItemObject.GetComponent<Mouse_Script>().SetFree(transform.forward);
 		pickup = PICKUP_TYPE.NONE;
 	}
 }
