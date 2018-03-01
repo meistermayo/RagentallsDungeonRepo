@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 23589847054494212}
   m_Layer: 0
   m_Name: Smiler
-  m_TagString: Usable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,9 +136,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1207684821159340}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.95, y: 0, z: 27.14}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1, y: -0.5, z: 13.5}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 1}
   m_Children:
   - {fileID: 4707779018120936}
   - {fileID: 4264497019413948}
@@ -547,7 +547,8 @@ MonoBehaviour:
   launchForce: 1000
   doorsToOpen:
   - {fileID: 0}
-  doorsToClose: []
+  doorsToClose:
+  - {fileID: 0}
 --- !u!114 &114526871028530604
 MonoBehaviour:
   m_ObjectHideFlags: 1
